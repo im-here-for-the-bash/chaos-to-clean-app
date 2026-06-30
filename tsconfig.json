@@ -1,0 +1,83 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+
+    "allowJs": false,
+    "skipLibCheck": true,
+
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+
+    "jsx": "preserve",
+    "noEmit": true,
+
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+
+    "baseUrl": ".",
+
+    "paths": {
+      "@/*": ["./*"],
+
+      "@/app/*": ["./app/*"],
+
+      "@/components/*": ["./components/*"],
+
+      "@/features/*": ["./features/*"],
+
+      "@/services/*": ["./services/*"],
+
+      "@/database/*": ["./database/*"],
+
+      "@/config/*": ["./config/*"],
+
+      "@/utils/*": ["./utils/*"],
+
+      "@/hooks/*": ["./hooks/*"],
+
+      "@/lib/*": ["./lib/*"],
+
+      "@/actions/*": ["./actions/*"],
+
+      "@/emails/*": ["./emails/*"],
+
+      "@/providers/*": ["./providers/*"],
+
+      "@/schemas/*": ["./schemas/*"],
+
+      "@/constants/*": ["./constants/*"],
+
+      "@/types/*": ["./types/*"],
+
+      "@/styles/*": ["./styles/*"]
+    }
+  },
+
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+
+  "exclude": [
+    "node_modules"
+  ]
+}
